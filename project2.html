@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GrabbIt – Grocery Delivery App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7fafc;
+      color: #4a4a4a;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      font-family: 'Roboto', sans-serif;
+      color: #2d3748;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #38a169;
+      border-bottom: 2px solid #38a169;
+      padding-bottom: 0.5rem;
+    }
+    .sub-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .bullet {
+      list-style-type: disc;
+      margin-left: 20px;
+      font-size: 1.1rem;
+    }
+    .container ul li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+    .cta-btn {
+      background-color: #38a169;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-align: center;
+      display: inline-block;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .cta-btn:hover {
+      background-color: #2f855a;
+      transform: scale(1.05);
+    }
+    .code-block {
+      background-color: #f7fafc;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: monospace;
+      color: #4a4a4a;
+      font-size: 1rem;
+      border: 1px solid #e2e8f0;
+    }
+    .code-block pre {
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+    .highlighted-text {
+      color: #38a169;
+      font-weight: 600;
+    }
+    .cta-btn-container {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .test-credentials {
+      background-color: #f0fdf4;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-4xl font-bold text-center text-green-700 mb-8">🛒 GrabbIt – Your Everyday Grocery Delivery Hub</h1>
+
+    <p class="text-lg leading-relaxed mb-6">
+      <strong>Overview:</strong> GrabbIt is a feature-packed grocery delivery web application designed to make daily grocery shopping easy and convenient. It allows users to browse, order, and manage groceries while also providing a seamless experience for sellers to manage their products and orders.
+    </p>
+
+    <h2 class="section-title">✨ Features</h2>
+
+    <h3 class="sub-title">🛍️ For Users</h3>
+    <ul class="bullet">
+      <li>✅ Secure Login/Signup with JWT and cookies.</li>
+      <li>✅ Browse groceries by categories on the All Products page.</li>
+      <li>✅ Detailed product pages with related items, cart options, and one-click buy.</li>
+      <li>✅ Cart & Checkout with Cash on Delivery and Stripe payments.</li>
+      <li>✅ Add and manage delivery addresses for faster checkout.</li>
+      <li>✅ View all past purchases in My Orders page.</li>
+    </ul>
+
+    <h3 class="sub-title">🧑‍💼 For Sellers</h3>
+    <ul class="bullet">
+      <li>✅ Dedicated Seller/Admin Login system.</li>
+      <li>✅ Add new products with image uploads via Cloudinary.</li>
+      <li>✅ Edit, update, and delete product listings.</li>
+      <li>✅ Central order management dashboard to handle incoming orders.</li>
+    </ul>
+
+    <h2 class="section-title">🔐 Test Admin Credentials</h2>
+    <div class="test-credentials">
+      <p><strong>Email:</strong> admin@example.com</p>
+      <p><strong>Password:</strong> greatstack123</p>
+    </div>
+
+    <h2 class="section-title">🛠️ Tech Stack</h2>
+
+    <h3 class="sub-title">Frontend</h3>
+    <ul class="bullet">
+      <li>React.js</li>
+      <li>Tailwind CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h3 class="sub-title">Backend</h3>
+    <ul class="bullet">
+      <li>Node.js</li>
+      <li>Express.js</li>
+      <li>MongoDB</li>
+      <li>Nodemon</li>
+    </ul>
+
+    <h3 class="sub-title">Integrations & Tools</h3>
+    <ul class="bullet">
+      <li>Stripe for payments</li>
+      <li>Cloudinary for image uploads</li>
+      <li>JWT for authentication</li>
+      <li>dotenv for env config</li>
+      <li>cookie-parser for session handling</li>
+    </ul>
+
+    <h2 class="section-title">🚀 Installation & Setup</h2>
+
+    <h3 class="sub-title">📋 Prerequisites</h3>
+    <ul class="bullet">
+      <li>Node.js (v16+)</li>
+      <li>npm or yarn</li>
+      <li>MongoDB Atlas</li>
+      <li>Stripe account</li>
+      <li>Cloudinary account</li>
+    </ul>
+
+    <h3 class="sub-title">💻 Setup Steps</h3>
+    <ol class="list-decimal ml-6 text-gray-700">
+      <li>Clone the Repository:
+        <div class="code-block"><pre>git clone &lt;your_repo_url&gt;</pre></div>
+      </li>
+      <li>Navigate to folders:
+        <div class="code-block"><pre>cd client  # frontend<br>cd server  # backend</pre></div>
+      </li>
+      <li>Install dependencies:
+        <div class="code-block"><pre>npm install</pre></div>
+      </li>
+      <li>Configure <code>.env</code> file:
+        <div class="code-block">
+<pre>
+JWT_SECRET=your_jwt_secret_key
+NODE_ENV=development
+
+SELLER_EMAIL=admin@example.com
+SELLER_PASSWORD=greatstack123
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+</pre></div>
+      </li>
+      <li>Run development server:
+        <div class="code-block"><pre>npm run dev</pre></div>
+      </li>
+    </ol>
+
+    <h2 class="section-title">👤 Author</h2>
+    <p class="text-lg">
+      Developed by <strong>Mahi Jadaun</strong> 🚀 <br/>
+      Feel free to collaborate, suggest improvements, or report issues.
+    </p>
+
+    <div class="cta-btn-container">
+      <a href="index.html" class="cta-btn">
+        ← Back to Projects
+      </a>
+    </div>
+  </div>
+</body>
+</html>

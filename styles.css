@@ -386,19 +386,19 @@ icon:hover{
     transform:scale(1.1);
 }
 #project1{
-    background-image: url("images/ShoppingWebsitePIctur.avif");
+    background-image: url("https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFsaXxlbnwwfHwwfHx8MA%3D%3D");
 }
 #project2{
     margin: 120px;
-    background-image: url("images/financepicture.webp");
+    background-image: url("https://images.unsplash.com/photo-1695653422259-8a74ffe90401?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JvY2VyeSUyMGRlbGl2ZXJ5fGVufDB8fDB8fHww");
 }
 #project3{
-    background-image: url("images/PortfolioPicture.avif");
+    background-image: url("https://images.unsplash.com/photo-1579869847557-1f67382cc158?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29jaWFsJTIwbWVkaWF8ZW58MHx8MHx8fDA%3D");
 }
-/* #project4{
+#project4{
     margin: 120px;
-    background-image: url("C:\Users\jadau\Downloads\LOVE-BABBAR-WEB-DEV-COURSE-master\LOVE-BABBAR-WEB-DEV-COURSE-master\Animation and Resposiveness\portfolio website\portfolio-website\images\projects\Project4.png");
-} */
+    background-image: url("https://images.unsplash.com/photo-1579003593419-98f949b9398f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D");
+}
 .skills-container{
     position:relative;
     display:flex;
@@ -559,3 +559,47 @@ footer{
     display: flex;
     gap: 1rem;
 }
+.project-details {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  .project-details h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .project-details ul {
+    padding-left: 20px;
+    margin: 20px 0;
+  }
+  
+  .project-details ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .project-details a.btn-pink {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #ff4d6d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .project-details a.btn-pink:hover {
+    background-color: #e0435f;
+  }
+  

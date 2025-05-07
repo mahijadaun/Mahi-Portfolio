@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TalkzUp – Social Media App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7fafc;
+      color: #4a4a4a;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      font-family: 'Roboto', sans-serif;
+      color: #2d3748;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #38a169;
+      border-bottom: 2px solid #38a169;
+      padding-bottom: 0.5rem;
+    }
+    .sub-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .bullet {
+      list-style-type: disc;
+      margin-left: 20px;
+      font-size: 1.1rem;
+    }
+    .container ul li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+    .cta-btn {
+      background-color: #38a169;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-align: center;
+      display: inline-block;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .cta-btn:hover {
+      background-color: #2f855a;
+      transform: scale(1.05);
+    }
+    .code-block {
+      background-color: #f7fafc;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: monospace;
+      color: #4a4a4a;
+      font-size: 1rem;
+      border: 1px solid #e2e8f0;
+    }
+    .code-block pre {
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+    .highlighted-text {
+      color: #38a169;
+      font-weight: 600;
+    }
+    .cta-btn-container {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .test-credentials {
+      background-color: #f0fdf4;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-4xl font-bold text-center text-green-700 mb-8">🚀 TalkzUp – Social Media App</h1>
+
+    <p class="text-lg leading-relaxed mb-6">
+      <strong>Overview:</strong> TalkzUp is a modern social media web application that allows users to share posts, interact with friends, send real-time private messages, and engage with content through likes and comments. With secure authentication and a clean UI, TalkzUp is designed to provide an intuitive and engaging experience for all users.
+    </p>
+
+    <h2 class="section-title">🛠 Features</h2>
+
+    <h3 class="sub-title">Post Updates</h3>
+    <ul class="bullet">
+      <li>Share your thoughts with the world.</li>
+      <li>Write, post, and edit updates in real-time.</li>
+    </ul>
+
+    <h3 class="sub-title">Like and Comment</h3>
+    <ul class="bullet">
+      <li>Like posts and engage in discussions by commenting.</li>
+      <li>Instantly see your interactions update in the feed.</li>
+    </ul>
+
+    <h3 class="sub-title">Private Messaging</h3>
+    <ul class="bullet">
+      <li>Chat with friends in real-time using Socket.io.</li>
+      <li>Send private, one-on-one messages.</li>
+    </ul>
+
+    <h3 class="sub-title">User Authentication</h3>
+    <ul class="bullet">
+      <li>Secure login/signup using JWT (JSON Web Tokens).</li>
+      <li>Authentication data is securely managed with bcrypt.js and JWT.</li>
+    </ul>
+
+    <h3 class="sub-title">User Profiles</h3>
+    <ul class="bullet">
+      <li>View and customize your profile.</li>
+      <li>See posts, comments, and likes made by the user.</li>
+    </ul>
+
+    <h3 class="sub-title">Responsive UI</h3>
+    <ul class="bullet">
+      <li>Optimized for both mobile and desktop views.</li>
+      <li>Interactive design with smooth transitions and animations.</li>
+    </ul>
+
+    <h3 class="sub-title">Real-Time Updates</h3>
+    <ul class="bullet">
+      <li>Get instant updates to posts and private messages.</li>
+      <li>All interactions (likes, comments, messages) are updated live.</li>
+    </ul>
+
+    <h2 class="section-title">🛠 Tech Stack</h2>
+
+    <h3 class="sub-title">Frontend</h3>
+    <ul class="bullet">
+      <li>React.js – For building dynamic and interactive UIs.</li>
+      <li>JavaScript – For dynamic interactivity and responsiveness.</li>
+      <li>Tailwind CSS – For modern and responsive styling.</li>
+    </ul>
+
+    <h3 class="sub-title">Backend</h3>
+    <ul class="bullet">
+      <li>Node.js & Express.js – For backend API and server-side logic.</li>
+      <li>MongoDB – For database storage and user data management.</li>
+      <li>Socket.io – For real-time messaging functionality.</li>
+    </ul>
+
+    <h3 class="sub-title">Authentication & Security</h3>
+    <ul class="bullet">
+      <li>JWT – For secure user authentication.</li>
+      <li>Bcrypt.js – For hashing user passwords.</li>
+      <li>Mongoose – For MongoDB object modeling and schema validation.</li>
+    </ul>
+
+    <h3 class="sub-title">Tools & Utilities</h3>
+    <ul class="bullet">
+      <li>dotenv – For managing environment variables.</li>
+    </ul>
+
+    <h2 class="section-title">🚀 Installation</h2>
+
+    <h3 class="sub-title">📋 Prerequisites</h3>
+    <ul class="bullet">
+      <li>Node.js (v16+ recommended)</li>
+      <li>npm or yarn</li>
+    </ul>
+
+    <h3 class="sub-title">💻 Setup Steps</h3>
+    <ol class="list-decimal ml-6 text-gray-700">
+      <li>Clone the Repository:
+        <div class="code-block"><pre>git clone https://github.com/yourusername/talkzup.git</pre></div>
+      </li>
+      <li>Navigate to project folder:
+        <div class="code-block"><pre>cd talkzup</pre></div>
+      </li>
+      <li>Install dependencies for both frontend and backend:
+        <div class="code-block"><pre>cd social-media-app <br> npm install <br> cd client <br> npm install</pre></div>
+      </li>
+      <li>Create <code>.env</code> file in the root directory with the following:
+        <div class="code-block">
+<pre>
+MONGO_URI=<YOUR_MONGO_URI>
+TOKEN_KEY=<YOUR_TOKEN_KEY>
+PORT=4000
+</pre></div>
+      </li>
+      <li>Run the server and client:
+        <div class="code-block"><pre>npm run server <br> cd client <br> npm start</pre></div>
+      </li>
+    </ol>
+
+    <h2 class="section-title">👤 Author</h2>
+    <p class="text-lg">
+      Developed by <strong>Mahi Jadaun</strong> 🚀 <br/>
+      Feel free to contribute, suggest improvements, or report issues!
+    </p>
+
+    <div class="cta-btn-container">
+      <a href="index.html" class="cta-btn">
+        ← Back to Projects
+      </a>
+    </div>
+  </div>
+</body>
+</html>
